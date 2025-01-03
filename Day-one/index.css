@@ -4,3 +4,44 @@
     box-sizing: border-box;
 }
 
+nav{
+    background-color:#dfa460; 
+    font-weight: 600;
+    height: 50px;
+ 
+ }
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+li:first-child {
+    margin-right: auto;
+}
+.Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    background-color: #3e3ef7;
+
+}
+button:hover {
+    color: #000;
+    background: #6767f7;
+    transition: ease-in-out;
+}
