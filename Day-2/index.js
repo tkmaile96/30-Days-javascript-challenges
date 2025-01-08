@@ -14,8 +14,6 @@ function updateDate() {
 
 }
 
-updateDate();
-
 //Clock function
 function updateClock() {
     const today = new Date();
@@ -29,6 +27,7 @@ function updateClock() {
 }
 
 setInterval(updateClock, 1000)
+updateDate();
 updateClock()
 
 
