@@ -1,0 +1,96 @@
+/*---STYLING-----*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif, "poppings";
+    font-weight: 200px;
+}
+body{
+    background: #a6ade9;
+}
+.app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.calculator{
+display: flex;
+flex-direction: column;
+overflow: hidden;
+width: 300px;
+height: 90vh;
+background: #111111;
+border-radius: 15px;
+margin: 100px auto 30px;
+
+}
+.display{
+    min-height: 80px;
+    padding:1.5rem ;
+    border-radius: 10px;
+   display: flex;
+   justify-content: flex-end;
+   align-items: flex-end;
+   color: #fff;
+   text-align: right;
+   flex: 1 1 0%;
+}
+.display .input{
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+.display .output{
+    font-size: 2rem;
+    font-weight: 500;
+    width: 100%;
+    max-width: 100%;
+    overflow: auto;
+}
+.display .operator span{
+    color: #EB6666;
+}
+.keys{
+    background-color:#141414 ;
+    padding: 1.5rem;
+    border-radius: 1.5rem 1.5rem 0 0;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(4,1fr);
+    box-shadow: 0px -2px 16px rgb(0, 0, 0.5);
+}
+.keys .key{
+    position: relative;
+    cursor: pointer;
+    height: 0;
+    padding-top: 100%;
+    background-color: #262933;
+    border-radius: 2rem;
+    transition: 0.2s;
+    user-select: none;
+}
+.operator{
+color: #EB6666;
+}
+.key.operator{
+    font-size: 2rem;
+}
+.keys .key span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+.keys .key:hover{
+    box-shadow: inset 0px 0px 8px #111111;
+}
+.keys .key.action span{
+ color: aqua;   
+}
+.keys .key.operator span{
+color: #EB6666;
+}
