@@ -31,6 +31,10 @@ function buttonClicks(event) {
             currentInput += lastAnswer;
     }else if(keyValue === 'pi') {
         currentInput += Math.PI.toFixed(4);
+    } else if(keyValue === 'On'){
+        currentInput = '0';
+    } else if(keyValue === 'off'){
+        currentInput = '';
     } else{
         currentInput += keyValue;
     }
