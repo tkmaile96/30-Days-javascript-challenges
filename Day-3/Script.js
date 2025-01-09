@@ -17,7 +17,8 @@ function buttonClicks(event) {
         currentInput = '';
         output.textContent = '';
     } else if(keyValue === 'backspace') {
-        input = currentInput.slice(0, -1);
+        currentInput = currentInput.slice(0, -1);
+        console.log("backspace is clicked")
     } else if(keyValue === 'equal') {
         try{
             const result = eval(currentInput);
