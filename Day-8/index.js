@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
             cityElement.textContent = `${data.name}`;
              tempElement.textContent = `Temperature: ${data.main.temp}°C`;
-             weatherElement.textContent =  `Weather:${data.weather[0].description}`;
+             weatherElement.textContent =  `Weather: ${data.weather[0].description}`;
         } catch (error) {
             cityElement.textContent = 'City not found or API error occurred.';
             tempElement.textContent = '';
