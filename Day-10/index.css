@@ -29,7 +29,7 @@ p{
     justify-content: center; 
 }
 body{
-    background: #333;
+    background: #fff;
 }
 
 .container {
@@ -38,7 +38,7 @@ body{
     align-items: center;
     justify-content: center;
     margin-top: 200px;
-    background: #56b0ec;
+    background: #1919f2;
     color: #fff;
     max-width: 550px;
     margin-left: auto;
